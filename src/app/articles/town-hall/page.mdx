@@ -1,0 +1,45 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Chet Reeves',
+  date: '2023-12-02',
+  title: 'First Town Hall Meeting',
+  description: 'ex: we met with the public to discuss ...',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+## Introduction
+
+Welcome to our blog. Here, we share insights, stories, and tips about YESS. Don't forget to check back regularly for new content!
+
+---
+
+### Key Highlights
+
+- **Point 1**: Brief description or insight.
+- **Point 2**: Another interesting fact or idea.
+- **Point 3**: An important takeaway.
+
+#### Subsection: Deep Dive
+
+Delve deeper into a specific aspect of the topic. Explain why it matters and how it relates to the reader.
+
+##### Key Takeaways
+
+- Insight 1
+- Insight 2
+- Insight 3
+
+---
+
+## Upcoming Topics
+
+- **Topic 1**: A brief description of what this topic will cover.
+- **Topic 2**: An interesting angle or question this topic will explore.
+- **Topic 3**: A teaser about what readers can expect.
