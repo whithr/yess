@@ -4,12 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
+import { InstagramIcon, TwitterIcon } from '@/components/SocialIcons'
 import yessRendering from '@/images/yess-rendering.jpg'
 
 function SocialLink({
