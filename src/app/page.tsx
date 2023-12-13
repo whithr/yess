@@ -14,7 +14,8 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import yessLogo from '@/images/yesslogo_standalone.svg'
+import yessLogoWhite from '@/images/yesslogo-white.svg'
+import yessLogoBlack from '@/images/yesslogo-black.svg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import { SocialLink } from '@/components/SocialLink'
@@ -128,7 +129,16 @@ export default async function Home() {
       <Container className="mt-20">
         <div className="max-w-4xl">
           <div className="flex-start mb-2 flex">
-            <Image src={yessLogo} alt="Logo for YESS" className="w-80" />
+            <Image
+              src={yessLogoWhite}
+              alt="Logo for YESS"
+              className="hidden w-80 dark:block"
+            />
+            <Image
+              src={yessLogoBlack}
+              alt="Logo for YESS"
+              className="block w-80 dark:hidden"
+            />
           </div>
 
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
