@@ -6,6 +6,8 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import { InstagramIcon, TwitterIcon } from '@/components/SocialIcons'
 import yessRendering from '@/images/yess-rendering.jpg'
+import overheadRendering from '@/images/overhead.jpg'
+import { Donate } from '@/components/Donate'
 
 function SocialLink({
   className,
@@ -52,7 +54,7 @@ export default function About() {
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
-          <div className="max-w-xs px-2.5 lg:max-w-none">
+          <div className="flex max-w-xs flex-col gap-5 px-2.5 lg:max-w-none">
             <Image
               src={yessRendering}
               alt=""
@@ -96,6 +98,15 @@ export default function About() {
               of activities make YESS a unique and valuable resource for the
               families we serve.
             </p>
+            <Image
+              src={overheadRendering}
+              alt=""
+              sizes="(min-width: 1024px) 32rem, 20rem"
+              className="rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            />
+            <p className="text-center">
+              The proposed location of the YESS headquarters
+            </p>
           </div>
         </div>
         <div className="lg:pl-20">
@@ -114,6 +125,8 @@ export default function About() {
               youthempoweredspreadingsuccess@gmail.com
             </SocialLink>
           </ul>
+          <br />
+          <Donate />
         </div>
       </div>
     </Container>

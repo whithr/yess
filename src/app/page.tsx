@@ -14,10 +14,11 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-// import yessLogo from '@/images/yesslogo_standalone.jpg'
+import yessLogo from '@/images/yesslogo_standalone.svg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import { SocialLink } from '@/components/SocialLink'
+import { Donate } from '@/components/Donate'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -86,31 +87,6 @@ function Newsletter() {
   )
 }
 
-function Donate() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Every dollar counts</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Your donation will go to directly to helping those who lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
-        libero. Sed cursus ante dapibus diam. Sed nisi.{' '}
-      </p>
-
-      <div className="mt-6 flex">
-        <Button type="submit" className="flex-none">
-          Donate
-        </Button>
-      </div>
-    </form>
-  )
-}
-
 function Photos() {
   const rotations = [
     'rotate-2',
@@ -151,9 +127,9 @@ export default async function Home() {
     <>
       <Container className="mt-20">
         <div className="max-w-4xl">
-          {/* <div className="flex-start flex">
+          <div className="flex-start mb-2 flex">
             <Image src={yessLogo} alt="Logo for YESS" className="w-80" />
-          </div> */}
+          </div>
 
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Youth Empowered Spreading Success
