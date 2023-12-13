@@ -24,5 +24,10 @@ export default {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     typography: typographyStyles,
+    extend: {
+      backgroundImage: {
+        'topography-pattern': "url('/public/topography.svg')",
+      },
+    },
   },
 } satisfies Config
