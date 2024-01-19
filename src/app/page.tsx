@@ -4,11 +4,11 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
+// import {
+//   InstagramIcon,
+//   LinkedInIcon,
+//   TwitterIcon,
+// } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -18,8 +18,8 @@ import yessLogoWhite from '@/images/yessLogoWhite.svg'
 import yessLogoBlack from '@/images/yessLogoBlack.svg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
-import { SocialLink } from '@/components/SocialLink'
-import { Donate } from '@/components/Donate'
+// import { SocialLink } from '@/components/SocialLink'
+// import { Donate } from '@/components/Donate'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
