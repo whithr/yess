@@ -93,12 +93,12 @@ function Photos() {
     'rotate-2',
     '-rotate-2',
     'rotate-2',
-    'rotate-2',
     '-rotate-2',
+    'rotate-2',
   ]
 
   return (
-    <div className="mt-16 sm:mt-20">
+    <div className="mt-5 sm:mt-10">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {[image2, image1, image3, image5, image4].map((image, imageIndex) => (
           <div
@@ -152,7 +152,7 @@ export default async function Home() {
             tools necessary for success in life.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
+            {/* <SocialLink
               href="https://twitter.com"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
@@ -166,7 +166,7 @@ export default async function Home() {
               href="https://linkedin.com"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
-            />
+            /> */}
           </div>
         </div>
       </Container>
@@ -178,10 +178,10 @@ export default async function Home() {
               <Article key={article.slug} article={article} />
             ))}
           </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
+          {/* <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
             <Donate />
-          </div>
+          </div> */}
         </div>
       </Container>
     </>

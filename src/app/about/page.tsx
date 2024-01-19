@@ -4,10 +4,10 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import { InstagramIcon, TwitterIcon } from '@/components/SocialIcons'
+// import { InstagramIcon, TwitterIcon } from '@/components/SocialIcons'
 import yessRendering from '@/images/yess-rendering.jpg'
 import overheadRendering from '@/images/overhead.jpg'
-import { Donate } from '@/components/Donate'
+// import { Donate } from '@/components/Donate'
 
 function SocialLink({
   className,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <Container className="mt-16 sm:mt-32">
+    <Container className="mt-10 sm:mt-10">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
           <div className="flex max-w-xs flex-col gap-5 px-2.5 lg:max-w-none">
@@ -111,12 +111,12 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={TwitterIcon}>
+            {/* <SocialLink href="#" icon={TwitterIcon}>
               Follow on Twitter
             </SocialLink>
             <SocialLink href="#" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
-            </SocialLink>
+            </SocialLink> */}
             <SocialLink
               href="mailto:youthempoweredspreadingsuccess@gmail.com"
               icon={MailIcon}
@@ -126,7 +126,7 @@ export default function About() {
             </SocialLink>
           </ul>
           <br />
-          <Donate />
+          {/* <Donate /> */}
         </div>
       </div>
     </Container>

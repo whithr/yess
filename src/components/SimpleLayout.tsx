@@ -10,7 +10,7 @@ export function SimpleLayout({
   children?: React.ReactNode
 }) {
   return (
-    <Container className="mt-16 sm:mt-32">
+    <Container className="mt-5 sm:mt-10">
       <header className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
           {title}
@@ -19,7 +19,7 @@ export function SimpleLayout({
           {intro}
         </p>
       </header>
-      {children && <div className="mt-16 sm:mt-20">{children}</div>}
+      {children && <div className="mt-10 sm:mt-10">{children}</div>}
     </Container>
   )
 }

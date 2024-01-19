@@ -1,95 +1,95 @@
-import { type Metadata } from 'next'
+'use client'
+
 import Image from 'next/image'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import { SocialLink } from '@/components/SocialLink'
-import { LinkedInIcon, TwitterIcon } from '@/components/SocialIcons'
-import profile1 from '@/images/photos/profile-1.jpg'
-import profile2 from '@/images/photos/profile-2.jpg'
-import profile3 from '@/images/photos/profile-3.jpg'
+import Chet from '@/images/photos/Chet.jpg'
+import Brijit from '@/images/photos/Brijit.jpg'
+import Daniel from '@/images/photos/Daniel.jpg'
+import Hunter from '@/images/photos/Hunter.jpg'
+import Ian from '@/images/photos/Ian.jpg'
+import Tara from '@/images/photos/Tara.jpg'
+import Link from 'next/link'
 
 const people = [
   {
-    name: 'Jane Doe',
-    role: 'Role',
-    imageUrl: profile3,
-    bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    name: 'Chet Reeves',
+    role: 'Founder / Board Chair',
+    imageUrl: Chet,
+    bio: 'My name is Chet Reeves and I am the founder of Y.E.S.S and Dead Bishops Charity Chess Club. I currently work at Tactics Skateshop.  Coming from a broken home, I realize the importance of having positive role models.  I’m a life long skater and living proof of the impact that skating and the skate community can have on a young person’s life.  Skating connects people from many different socio-economic backgrounds and teaches that even if you fall, you can pick yourself back up and accomplish anything.  My passion is to make this dream become a reality, one that will leave a positive impact on the coming generations',
+    link: 'ChetReeves',
   },
   {
-    name: 'John Doe',
-    role: 'Role',
-    imageUrl: profile1,
+    name: 'Tara Garkow',
+    role: 'Board Secretary / Vice Chair',
+    imageUrl: Tara,
     bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    link: 'TaraGarkow',
   },
   {
-    name: 'Jazz Doe',
-    role: 'Role',
-    imageUrl: profile2,
+    name: 'Ian Gray',
+    role: 'Treasurer',
+    imageUrl: Ian,
     bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    link: 'IanGray',
+  },
+  {
+    name: 'BriJit Blair-Jenkins',
+    role: 'Board Member',
+    imageUrl: Brijit,
+    bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
+    link: 'BriJitBlairJenkins',
+  },
+  {
+    name: 'Daniel Jenkins',
+    role: 'Board Member',
+    imageUrl: Daniel,
+    bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
+    link: 'DanielJenkins',
+  },
+  {
+    name: 'Hunter Nelms',
+    role: 'Board Member',
+    imageUrl: Hunter,
+    bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
+    link: 'HunterNelms',
   },
 ]
-
-export const metadata: Metadata = {
-  title: 'Our team',
-  description:
-    'We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for the youth of Eugene, Oregon.',
-}
 
 export default function People() {
   return (
     <SimpleLayout
       title="Our team"
-      intro="We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for the youth of Eugene, Oregon."
+      intro="We are passionate about what we do and dedicated to delivering the best results for the youth of Eugene, Oregon."
     >
-      <ul
-        role="list"
-        className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3"
-      >
-        {people.map((person) => (
-          <li
-            key={person.name}
-            className="flex flex-col gap-10 pt-12 sm:flex-row"
+      <div className="">
+        <div className="mx-auto max-w-7xl px-2 lg:px-2">
+          <ul
+            role="list"
+            className="mx-auto grid max-w-2xl grid-cols-1 gap-x-2 gap-y-16 sm:grid-cols-2 md:gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
           >
-            <Image
-              className="aspect-[4/5] h-auto w-auto flex-none rounded-2xl object-cover"
-              src={person.imageUrl}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              width={220}
-            />
-            <div className="max-w-xl flex-auto">
-              <h3 className="text-lg font-semibold leading-8 tracking-tight text-zinc-800 dark:text-zinc-100">
-                {person.name}
-              </h3>
-              <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
-                {person.role}
-              </p>
-              <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
-                {person.bio}
-              </p>
-              <ul role="list" className="flex gap-x-6">
-                <li className="mt-2 flex gap-4">
-                  <SocialLink
-                    href="https://twitter.com"
-                    aria-label="Follow on Twitter"
-                    icon={TwitterIcon}
+            {people.map((person) => (
+              <Link href={`/people/${person.link}`} key={`link-${person.name}`}>
+                <li
+                  key={person.name}
+                  className="rounded-xl p-3 shadow-md transition-all duration-300 hover:scale-105 hover:cursor-pointer hover:shadow-xl dark:bg-zinc-800/50"
+                >
+                  <Image
+                    className="aspect-[3/2] w-full rounded-2xl object-cover"
+                    src={person.imageUrl}
+                    alt=""
                   />
-                  <SocialLink
-                    href="https://linkedin.com"
-                    aria-label="Connect on LinkedIn"
-                    icon={LinkedInIcon}
-                  />
+                  <h3 className="mt-4 text-lg font-semibold leading-8 tracking-tight text-zinc-800 dark:text-zinc-100">
+                    {person.name}
+                  </h3>
+                  <p className="text-base leading-7 text-zinc-600 dark:text-zinc-400">
+                    {person.role}
+                  </p>
                 </li>
-              </ul>
-            </div>
-          </li>
-        ))}
-      </ul>
+              </Link>
+            ))}
+          </ul>
+        </div>
+      </div>
     </SimpleLayout>
   )
 }
