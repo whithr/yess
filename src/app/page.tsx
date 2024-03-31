@@ -2,7 +2,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 
 // import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
+// import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 // import {
 //   InstagramIcon,
@@ -16,10 +16,8 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import yessLogoWhite from '@/images/yessLogoWhite.svg'
 import yessLogoBlack from '@/images/yessLogoBlack.svg'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
-import { formatDate } from '@/lib/formatDate'
-import { SocialLink } from '@/components/SocialLink'
-import { InstagramIcon } from '@/components/SocialIcons'
+// import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
+// import { formatDate } from '@/lib/formatDate'
 // import { SocialLink } from '@/components/SocialLink'
 // import { Donate } from '@/components/Donate'
 
@@ -46,20 +44,20 @@ import { InstagramIcon } from '@/components/SocialIcons'
 //   )
 // }
 
-function Article({ article }: { article: ArticleWithSlug }) {
-  return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
-    </Card>
-  )
-}
+// function Article({ article }: { article: ArticleWithSlug }) {
+//   return (
+//     <Card as="article">
+//       <Card.Title href={`/articles/${article.slug}`}>
+//         {article.title}
+//       </Card.Title>
+//       <Card.Eyebrow as="time" dateTime={article.date} decorate>
+//         {formatDate(article.date)}
+//       </Card.Eyebrow>
+//       <Card.Description>{article.description}</Card.Description>
+//       <Card.Cta>Read article</Card.Cta>
+//     </Card>
+//   )
+// }
 
 // function Newsletter() {
 //   return (
@@ -124,7 +122,7 @@ function Photos() {
 }
 
 export default async function Home() {
-  const articles = (await getAllArticles()).slice(0, 4)
+  // const articles = (await getAllArticles()).slice(0, 4)
 
   return (
     <>
