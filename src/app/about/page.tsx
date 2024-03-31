@@ -7,6 +7,7 @@ import { Container } from '@/components/Container'
 // import { InstagramIcon, TwitterIcon } from '@/components/SocialIcons'
 import yessRendering from '@/images/yess-rendering.jpg'
 import overheadRendering from '@/images/overhead.jpg'
+import { InstagramIcon } from '@/components/SocialIcons'
 // import { Donate } from '@/components/Donate'
 
 function SocialLink({
@@ -71,10 +72,10 @@ export default function About() {
             <p>
               Youth Empowered Spreading Success (YESS) is a non-profit
               organization dedicated to fostering a nurturing and secure
-              environment for children, where they can explore their potential
-              and develop essential life skills. Our mission is to provide
-              children with a sense of belonging and equip them with the tools
-              necessary for success in life.
+              environment for the next generations, where they can explore their
+              potential and develop essential life skills. Our mission is to
+              provide youths and young adults with a sense of belonging and
+              equip them with the tools necessary for success in life.
             </p>
             <p>
               To achieve our mission, YESS offers a variety of engaging
@@ -91,7 +92,7 @@ export default function About() {
               While the indoor skatepark is a significant component of our
               facility, YESS remains committed to providing a comprehensive
               range of activities to cater to the varying interests and needs of
-              our community's children. We believe that by offering diverse
+              our community's youths. We believe that by offering diverse
               opportunities for personal growth in a safe space, we can empower
               them to build a bright future for themselves and their
               communities. Our commitment to inclusivity and our extensive range
@@ -117,6 +118,13 @@ export default function About() {
             <SocialLink href="#" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
             </SocialLink> */}
+            <SocialLink
+              href="https://www.instagram.com/yess.eugene/"
+              icon={InstagramIcon}
+              className="mt-4"
+            >
+              Follow on Instagram
+            </SocialLink>
             <SocialLink
               href="mailto:youthempoweredspreadingsuccess@gmail.com"
               icon={MailIcon}

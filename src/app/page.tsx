@@ -18,6 +18,8 @@ import yessLogoWhite from '@/images/yessLogoWhite.svg'
 import yessLogoBlack from '@/images/yessLogoBlack.svg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import { SocialLink } from '@/components/SocialLink'
+import { InstagramIcon } from '@/components/SocialIcons'
 // import { SocialLink } from '@/components/SocialLink'
 // import { Donate } from '@/components/Donate'
 
@@ -146,12 +148,17 @@ export default async function Home() {
           </h1>
           <p className="mt-3 max-w-2xl text-base text-zinc-600 dark:text-zinc-400">
             A non-profit organization dedicated to fostering a nurturing and
-            secure environment for children, where they can explore their
-            potential and develop essential life skills. Our mission is to
-            provide children with a sense of belonging and equip them with the
-            tools necessary for success in life.
+            secure environment for the next generations, where they can explore
+            their potential and develop essential life skills. Our mission is to
+            provide youths and young adults with a sense of belonging and equip
+            them with the tools necessary for success in life.
           </p>
           <div className="mt-6 flex gap-6">
+            {/* <SocialLink
+              href="https://www.instagram.com/yess.eugene/"
+              icon={InstagramIcon}
+              className="mt-4"
+            /> */}
             {/* <SocialLink
               href="https://twitter.com"
               aria-label="Follow on Twitter"
@@ -172,11 +179,35 @@ export default async function Home() {
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {articles.map((article) => (
+        <div className="mx-auto flex w-full max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+          <div className="flex w-full flex-col gap-16">
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://www.youtube.com/embed/wuwRrYLoF_0"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://www.youtube.com/embed/zUDMdCJaZG4"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://www.youtube.com/embed/weNs1y4iwgs"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            {/* {articles.map((article) => (
               <Article key={article.slug} article={article} />
-            ))}
+            ))} */}
           </div>
           {/* <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />

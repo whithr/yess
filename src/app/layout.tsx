@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: 'YESS - Youth Empowered Spreading Success',
   },
   description:
-    'YESS is a non-profit organization dedicated to fostering a nurturing and secure environment for children.',
+    'YESS is a non-profit organization dedicated to fostering a nurturing and secure environment for youths.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
