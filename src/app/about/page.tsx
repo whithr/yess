@@ -8,7 +8,6 @@ import { Container } from '@/components/Container'
 import yessRendering from '@/images/yess-rendering.jpg'
 import overheadRendering from '@/images/overhead.jpg'
 import { InstagramIcon } from '@/components/SocialIcons'
-import { Button } from '@/components/Button'
 // import { Donate } from '@/components/Donate'
 
 function SocialLink({
