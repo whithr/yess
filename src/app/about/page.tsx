@@ -8,6 +8,7 @@ import { Container } from '@/components/Container'
 import yessRendering from '@/images/yess-rendering.jpg'
 import overheadRendering from '@/images/overhead.jpg'
 import { InstagramIcon } from '@/components/SocialIcons'
+import { Button } from '@/components/Button'
 // import { Donate } from '@/components/Donate'
 
 function SocialLink({
@@ -112,12 +113,6 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            {/* <SocialLink href="#" icon={TwitterIcon}>
-              Follow on Twitter
-            </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </SocialLink> */}
             <SocialLink
               href="https://www.instagram.com/yess.eugene/"
               icon={InstagramIcon}
@@ -134,6 +129,19 @@ export default function About() {
             </SocialLink>
           </ul>
           <br />
+          <div className="mt-8 h-max">
+            <iframe
+              src="https://donorbox.org/embed/help-us-buy-the-land?default_interval=o"
+              name="donorbox"
+              className="h-[1000px] w-full overflow-auto border-none p-8"
+              //@ts-expect-error allowPaymentRequest is not a valid property
+              allowPaymentRequest
+              seamless
+              width="100%"
+              allow="payment"
+              title="Donate via Donorbox"
+            ></iframe>
+          </div>
           {/* <Donate /> */}
         </div>
       </div>
