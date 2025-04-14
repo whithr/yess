@@ -9,6 +9,7 @@ import Hunter from '@/images/photos/Hunter.jpg'
 import Ian from '@/images/photos/Ian.jpg'
 import Tara from '@/images/photos/Tara.jpg'
 import Link from 'next/link'
+import { Button } from '@/components/Button'
 
 const people = [
   {
@@ -62,7 +63,7 @@ export default function People() {
       intro="We are passionate about what we do and dedicated to delivering the best results for the youth of Eugene, Oregon."
     >
       <div className="">
-        <div className="mx-auto max-w-7xl px-2 lg:px-2">
+        <div className="mx-auto flex max-w-7xl flex-col gap-10 px-2 lg:px-2">
           <ul
             role="list"
             className="mx-auto grid max-w-2xl grid-cols-1 gap-x-2 gap-y-16 sm:grid-cols-2 md:gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
@@ -88,6 +89,15 @@ export default function People() {
               </Link>
             ))}
           </ul>
+          <Button
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd-PuHD4QOK0iiZ9bb-dZQNON9Ll3oJar7mfcMw_q0U23kZ7Q/viewform?usp=header"
+            variant="primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="max-w-[300px]"
+          >
+            Apply to be a board member!
+          </Button>
         </div>
       </div>
     </SimpleLayout>

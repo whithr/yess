@@ -75,13 +75,23 @@ export default async function Home() {
             provide youths and young adults with a sense of belonging and equip
             them with the tools necessary for success in life.
           </p>
-          <Button
-            href="https://donorbox.org/help-us-buy-the-land?default_interval=o"
-            className="mt-4"
-            variant="primary"
-          >
-            Donate now
-          </Button>
+          <div className="mt-4 flex gap-2">
+            <Button
+              href="https://donorbox.org/help-us-buy-the-land?default_interval=o"
+              variant="primary"
+            >
+              Donate now
+            </Button>
+
+            <Button
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd-PuHD4QOK0iiZ9bb-dZQNON9Ll3oJar7mfcMw_q0U23kZ7Q/viewform?usp=header"
+              variant="primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apply to be a board member!
+            </Button>
+          </div>
           <div className="mt-6 flex gap-6">
             {/* <SocialLink
               href="https://www.instagram.com/yess.eugene/"
