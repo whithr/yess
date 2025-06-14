@@ -3,9 +3,6 @@
 import Image from 'next/image'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import Chet from '@/images/photos/Chet.jpg'
-import Brijit from '@/images/photos/Brijit.jpg'
-import Daniel from '@/images/photos/Daniel.jpg'
-import Hunter from '@/images/photos/Hunter.jpg'
 import Ian from '@/images/photos/Ian.jpg'
 import Tara from '@/images/photos/Tara.jpg'
 import Link from 'next/link'
@@ -32,27 +29,6 @@ const people = [
     imageUrl: Ian,
     bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
     link: 'IanGray',
-  },
-  {
-    name: 'BriJit Blair-Jenkins',
-    role: 'Board Member',
-    imageUrl: Brijit,
-    bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-    link: 'BriJitBlairJenkins',
-  },
-  {
-    name: 'Daniel Jenkins',
-    role: 'Board Member',
-    imageUrl: Daniel,
-    bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-    link: 'DanielJenkins',
-  },
-  {
-    name: 'Hunter Nelms',
-    role: 'Board Member',
-    imageUrl: Hunter,
-    bio: 'Praesentium iure error aliquam voluptas ut libero. Commodi placeat sit iure nulla officiis. Ut ex sit repellat tempora. Qui est accusamus exercitationem natus ut voluptas. Officiis velit eos ducimus.',
-    link: 'HunterNelms',
   },
 ]
 
